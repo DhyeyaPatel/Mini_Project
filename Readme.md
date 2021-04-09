@@ -1,7 +1,5 @@
 # SDLC Activity Based Learning
 
-![lib_checkout](https://github.com/DhyeyaPatel/Mini-Project/blob/main/5_Images/lib_checkout.png)
-
 Build | Code Quality | Unity | [Git Inspector](using github.io option)
 ------|----------|-------|--------------
 To be added | To be added | To be added | To be added |
