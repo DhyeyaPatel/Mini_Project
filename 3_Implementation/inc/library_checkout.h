@@ -8,6 +8,7 @@
  * @copyright Copyright (c) 2021
  * 
  */
+
 #ifndef __LIBRARY_CHECKOUT_H__
 #define __LIBRARY_CHECKOUT_H__
 
@@ -16,9 +17,6 @@
 #include"display_book.h"
 #include"create_record.h"
 #include"delete_record.h"
-
-
-#include"read_record.h"
-#include"return_record.h"
+#include"utility.h"
 
 #endif  //__LIBRARY_CHECKOUT_H__
