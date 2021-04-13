@@ -1,0 +1,66 @@
+/**
+ * @file library_checkout_test.c
+ * @author Dhyeya Patel (https://github.com/DhyeyaPatel/Mini_Project.git)
+ * @brief 
+ * @version 0.1
+ * @date 2021-04-13
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+#include "unity.h"
+#include "library_checkout.h"
+
+/* Required by the unity test framework */
+void setUp(){}
+/* Required by the unity test framework */
+void tearDown(){}
+
+
+void test_create_record(void) 
+{
+  book_t new_record = {"Power Electronics", "P.S. Bimbhra", "17BEE100"};
+  TEST_ASSERT_EQUAL(0, create_record(&new_record));
+}
+
+void test_delete_record(void) 
+{
+  book_t new_record = {"Power Electronics", "P.S. Bimbhra", "17BEE100"};
+  TEST_ASSERT_EQUAL(0, create_record(&new_record));
+  TEST_ASSERT_EQUAL(0, delete_record(new_record.book_name));
+}
+
+
+void test_search_book(void) 
+{
+  book_t new_record = {"Power Electronics", "P.S. Bimbhra", "17BEE100"};
+  TEST_ASSERT_EQUAL(0, create_record(&new_record));
+  TEST_ASSERT_EQUAL(0 , search_book(new_record.book_name));
+  TEST_ASSERT_EQUAL(0 , delete_book(new_record.book_name));
+}
+void test_display_book(void) 
+{ 
+  TEST_ASSERT_EQUAL(1, display_book()>0);
+}
+
+int main(void)
+{
+/* Initiate the Unity Test Framework */
+  UNITY_BEGIN();
+
+/* Run Test functions */
+  RUN_TEST(test_create_record);
+  RUN_TEST(test_delete_record);
+  RUN_TEST(test_search_book);
+  RUN_TEST(test_display_book);
+
+  /* Close the Unity Test Framework */
+  return UNITY_END();
+}
+
+
+
+
+
+
+

@@ -15,13 +15,15 @@
 enum max_lengths
 {
     MAX_NAME_LENGTH = 32,
-    MAX_AUTHOR_NAME = 32
+    MAX_AUTHOR_NAME = 15,
+    MAX_ROLLNO_LENGTH = 7
 };
 
 typedef struct book_t
 {
     char book_name[MAX_NAME_LENGTH];
-    char author_name[MAX_NAME_LENGTH];
+    char author_name[MAX_AUTHOR_NAME];
+    char student_rollno[MAX_ROLLNO_LENGTH];
 
 }book_t;
 
