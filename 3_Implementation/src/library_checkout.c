@@ -19,7 +19,14 @@ typedef enum options {
   EXIT
 } options_t;
 
-int main() {
+/**
+ * @brief Main Function
+ * 
+ * @return int 
+ */
+
+int main() 
+{
   int choice = NONE;
 
   printf("\n\t-------Welcome to Library Checkout-------\n");
@@ -40,7 +47,7 @@ int main() {
 
             get_book_details(new_record);
 
-            switch (add_record(new_record)) 
+            switch (create_record(new_record)) 
             {
                 case 0:
                     printf("\n\t Creating Record was successful");
@@ -62,7 +69,7 @@ int main() {
             printf("Enter book's Name from above list:");
             get_data(book_name);
 
-                switch (delete_contact(book_name)) 
+                switch (delete_record(book_name)) 
                 {
                     case -1:
                         printf("\n\t***No Matching book found***\n");

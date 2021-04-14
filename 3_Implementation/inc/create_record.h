@@ -14,8 +14,8 @@
 
 #include"book.h"
 
-int create_entry(book_t *book);
+int create_record(book_t *book);
 
-void create_new_entry(book_t *book);
+void create_new_record(book_t *book);
 
 #endif  //__CREATE_RECORD_H__

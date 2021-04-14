@@ -17,12 +17,20 @@ void setUp(){}
 void tearDown(){}
 
 
+/**
+ * @brief Test Case for creating record
+ * 
+ */
 void test_create_record(void) 
 {
   book_t new_record = {"Power Electronics", "P.S. Bimbhra", "17BEE100"};
   TEST_ASSERT_EQUAL(0, create_record(&new_record));
 }
 
+/**
+ * @brief Test case for deleting record
+ * 
+ */
 void test_delete_record(void) 
 {
   book_t new_record = {"Power Electronics", "P.S. Bimbhra", "17BEE100"};
@@ -30,7 +38,10 @@ void test_delete_record(void)
   TEST_ASSERT_EQUAL(0, delete_record(new_record.book_name));
 }
 
-
+/**
+ * @brief Test case for searching book
+ * 
+ */
 void test_search_book(void) 
 {
   book_t new_record = {"Power Electronics", "P.S. Bimbhra", "17BEE100"};
@@ -38,11 +49,21 @@ void test_search_book(void)
   TEST_ASSERT_EQUAL(0 , search_book(new_record.book_name));
   TEST_ASSERT_EQUAL(0 , delete_book(new_record.book_name));
 }
+
+/**
+ * @brief Test case for displaying book
+ * 
+ */
 void test_display_book(void) 
 { 
   TEST_ASSERT_EQUAL(1, display_book()>0);
 }
 
+/**
+ * @brief Main Function
+ * 
+ * @return int 
+ */
 int main(void)
 {
 /* Initiate the Unity Test Framework */
