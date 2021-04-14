@@ -7,7 +7,7 @@
  *  The number of students studying in a school or a university are much more than one can think of keeping a track of records for the students. Register based system to keep a track on books is still being used in some of the schools, but as the number of students as well the number of the books increase, it becomes difficult to manage the records.
  *  Library Checkout is an efficient library management system in which a student can search the book by it's name to know whether it is available in the library or not, helps in creating an entry for the one who wants to issue a book as well as deletiion of that entry when the book being returned.
 
- ###Benefits
+ ### Benefits
  *  Bettter Tracking of Book Records
  *  Less burden on staff
  *  Reducing wastage of paper
@@ -22,6 +22,7 @@ In order to determine the cost to develop library management system, a few aspec
 Hence, to create a Library Management System in India would cost around $25000 to $35000 which will be having very basic features and will be on one single platform only.
 
 ## Defining Our System
+![system](https://github.com/DhyeyaPatel/Mini_Project/blob/master/5_Images/system.png)
 ### Explanation
 Library Checkout holds some of the very basic features of a library management system:
 *   Create a record
@@ -31,7 +32,7 @@ Library Checkout holds some of the very basic features of a library management s
 The whole system is operated by an admin.
 
 ## SWOT ANALYSIS
-
+![swot analysis](https://github.com/DhyeyaPatel/Mini_Project/blob/master/5_Images/swot%20analysis.png)
 # 4W&#39;s and 1&#39;H
 
 ## Who:
