@@ -35,7 +35,7 @@ DOCUMENTATION_OUTPUT = documentation/html
 $(PROJECT_NAME):all
 
 # Run the target even if the matching name exists
-.PHONY: run clean test doc all
+.PHONY: run clean test doc all valgrind
 
 all: $(SRC) $(BUILD)
 	gcc src/library_checkout.c $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
@@ -56,6 +56,10 @@ test:$(BUILD)
 # Remove all the built files, invoke by `make clean`
 clean:
 	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT) books.bin
+
+#For Linux Only
+valgrind:
+		./$(PROJECT_NAME).out < input_redirect.txt
 
 # Create new build folder if not present
 $(BUILD):
