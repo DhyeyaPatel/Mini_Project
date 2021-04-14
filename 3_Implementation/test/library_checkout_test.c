@@ -47,7 +47,7 @@ void test_search_book(void)
   book_t new_record = {"Power Electronics", "P.S. Bimbhra", "17BEE100"};
   TEST_ASSERT_EQUAL(0, create_record(&new_record));
   TEST_ASSERT_EQUAL(0 , search_book(new_record.book_name));
-  TEST_ASSERT_EQUAL(0 , delete_book(new_record.book_name));
+  TEST_ASSERT_EQUAL(0 , delete_record(new_record.book_name));
 }
 
 /**
