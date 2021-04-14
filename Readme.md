@@ -1,4 +1,7 @@
 # SDLC Activity Based Learning
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9b9857836326466c840e929b796ed0f5)](https://app.codacy.com/gh/DhyeyaPatel/Mini_Project?utm_source=github.com&utm_medium=referral&utm_content=DhyeyaPatel/Mini_Project&utm_campaign=Badge_Grade_Settings)
+
 ![lib_checkout](https://github.com/DhyeyaPatel/Mini_Project/blob/master/5_Images/lib_checkout.png)
 
 Build | Code Quality | Unity | [Git Inspector](using github.io option)
