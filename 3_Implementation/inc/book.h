@@ -16,7 +16,7 @@ enum max_lengths
 {
     MAX_NAME_LENGTH = 32,
     MAX_AUTHOR_NAME = 15,
-    MAX_ROLLNO_LENGTH = 7
+    MAX_ROLLNO_LENGTH = 8
 };
 
 typedef struct book_t
