@@ -1,4 +1,4 @@
-name: Code Quality Dynamic Code Analysis Valgrind
+name: Code Quality Dynamic Code Analysis - Valgrind
 on:
   push:
     branches: [ main ]
