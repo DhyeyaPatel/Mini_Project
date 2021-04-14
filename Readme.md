@@ -3,7 +3,7 @@
 
 Build | Code Quality | Unity | [Git Inspector](using github.io option)
 ------|----------|-------|--------------
-To be added | [![Codacy Badge](https://app.codacy.com/project/badge/Grade/6a0ab92d26cb4da08333db061e89c529)](https://www.codacy.com/gh/DhyeyaPatel/Mini_Project/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=DhyeyaPatel/Mini_Project&amp;utm_campaign=Badge_Grade) | To be added | To be added |
+[![C/C++ CI](https://github.com/DhyeyaPatel/Mini_Project/actions/workflows/c-build.yml/badge.svg)](https://github.com/DhyeyaPatel/Mini_Project/actions/workflows/c-build.yml) | [![Codacy Badge](https://app.codacy.com/project/badge/Grade/6a0ab92d26cb4da08333db061e89c529)](https://www.codacy.com/gh/DhyeyaPatel/Mini_Project/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=DhyeyaPatel/Mini_Project&amp;utm_campaign=Badge_Grade) | To be added | To be added |
 
 
 ## Folder Structure
