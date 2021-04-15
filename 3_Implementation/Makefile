@@ -1,7 +1,7 @@
 # Name of the project
 PROJECT_NAME = lib
 
-TEST_PROJ_NAME = Test_$(PROJ_NAME)
+TEST_PROJECT_NAME = Test_$(PROJECT_NAME)
 
 # Output directory
 BUILD = build
