@@ -50,7 +50,7 @@ The whole system is operated by an admin.
 ## How:
 *   The system will help in creating a new record for the student who will issue a book or an article, deleting records of those who have returned, searching of books, and also displaying it's results.
 
-# Detail requirements(To be Done)
+# Detail requirements
 ## High Level Requirements:
  ID | Description | Status (Implemented/Future)
 ------ |-----------| --------------
@@ -66,8 +66,8 @@ The whole system is operated by an admin.
 ##  Low level Requirements:
 ID | Description | Status (Implemented/Future)
 ------ |-----------| --------------
-`LR01` | New Records shall be added by providing all the asked information like book number, book author and student roll number. | HR01 | Implemented
-`LR02` | If student searches for a book and if it's record is found then the name and author of that book will be displayed. | HR04 & HR05 | Implemented
-`LR03` | If student searches for a book and if not then no record found will be displayed. | HR05 | Implemented
-`LR04` | Student needs to search by the name of the book and the name of the author." | HR04 | Implemented
-`LR05` | When the program is ran, all the options should be displayed on screen(create,delete,search,display,exit). If incorrect input is given by user then, print the message "selected option unavailable" | HRxx | Implemented
+`LR01` | New Records shall be added by providing all the asked information like book number, book author and student roll number. | `HR01` | Implemented
+`LR02` | If student searches for a book and if it's record is found then the name and author of that book will be displayed. | `HR04` & `HR05` | Implemented
+`LR03` | If student searches for a book and if not then no record found will be displayed. | `HR05` | Implemented
+`LR04` | Student needs to search by the name of the book and the name of the author." | `HR04` | Implemented
+`LR05` | When the program is ran, all the options should be displayed on screen(create,delete,search,display,exit). If incorrect input is given by user then, print the message "selected option unavailable" | `HRxx` | Implemented
