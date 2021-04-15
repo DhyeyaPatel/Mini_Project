@@ -1,4 +1,4 @@
-# SDLC Activity Based Learning
+# Library checkout
 ![lib_checkout](https://github.com/DhyeyaPatel/Mini_Project/blob/master/5_Images/lib_checkout.png)
 
 Build | Code Quality | Code Qualtiy - Static Analysis | [Git Inspector] |
@@ -23,7 +23,7 @@ SFID |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|
 
 ## Challenges Faced and How Was It Overcome
 
-1. ABC
+1. Implement Code in Windows.
 2. BCD
 3. ...
 4. ...
