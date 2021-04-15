@@ -52,10 +52,22 @@ The whole system is operated by an admin.
 
 # Detail requirements(To be Done)
 ## High Level Requirements:
---- TBD in Tabular Format 
--- ID | Description | Status (Implemented/Future)
+ ID | Description | Status (Implemented/Future)
+------ |-----------| --------------
+`HR01` | The admin should be able to create new records| Technical-Implemented
+`HR02 `| The admin should be able to delete the records| Technical-Implemented
+`HR03 `| The admin should be able to read the records| Technical-Implemented
+`HR04 `| The student should be able to search the book records| Technical-Implemented
+`HR05 `| The admin shoould be able to display the searched records from the file| Technical-Implemented
+`HR06 `| There should be no data loss in case of system failure | Future
+`HR07 `|There should be no data breach or leakage and the data should be safe| Future
 
 
 ##  Low level Requirements:
---- TBD in Tabular Format 
--- ID | Description | Status (Implemented/Future)
+ID | Description | Status (Implemented/Future)
+------ |-----------| --------------
+`LR01` | New Records shall be added by providing all the asked information like book number, book author and student roll number. | HR01 | Implemented
+`LR02` | If student searches for a book and if it's record is found then the name and author of that book will be displayed. | HR04 & HR05 | Implemented
+`LR03` | If student searches for a book and if not then no record found will be displayed. | HR05 | Implemented
+`LR04` | Student needs to search by the name of the book and the name of the author." | HR04 | Implemented
+`LR05` | When the program is ran, all the options should be displayed on screen(create,delete,search,display,exit). If incorrect input is given by user then, print the message "selected option unavailable" | HRxx | Implemented
