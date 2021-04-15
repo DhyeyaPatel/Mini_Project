@@ -10,7 +10,7 @@
  */
 
 #include <stdio.h>
-//#include <stdio_ext.h>
+#include <stdio_ext.h>
 #include <stdlib.h>
 #include "create_record.h"
 #include "utility.h"
