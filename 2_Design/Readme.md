@@ -1,4 +1,4 @@
-# Design(To be Done)
+# Design
 ##  Architecture Diagram
 ![Architecture diagram](https://github.com/DhyeyaPatel/Mini_Project/blob/master/5_Images/Architecture.png)
 
