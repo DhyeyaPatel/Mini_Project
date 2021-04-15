@@ -10,6 +10,7 @@
  */
 #include "library_checkout.h"
 
+
 typedef enum options {
   NONE,
   CREATE_RECORD,
@@ -36,7 +37,7 @@ int main()
     printf("1.Create Record \n2.Delete Record\n3.Display all books\n4.Search for a book\n5.Exit\n");
 
     //printf("Enter your choice: ");
-    __fpurge(stdin);
+    fflush(stdin);
     scanf("%d", &choice);
 
     switch (choice) 
@@ -117,7 +118,7 @@ int main()
         char book_name[MAX_NAME_LENGTH] = "";
 
         printf("\nEnter name of person to search\n");
-        __fpurge(stdin);
+        fflush(stdin);
         get_data(book_name);
 
         switch (search_book(book_name)) {

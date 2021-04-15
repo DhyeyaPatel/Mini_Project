@@ -10,7 +10,7 @@
  */
 
 #include <stdio.h>
-#include <stdio_ext.h>
+//#include <stdio_ext.h>
 #include <stdlib.h>
 #include "create_record.h"
 #include "utility.h"
@@ -33,7 +33,7 @@ int create_record(book_t *book)
 
   fwrite(book, sizeof(book_t), 1, fp);
 
-  __fpurge(stdin);
+  fflush(stdin);
   fclose(fp);
 
   return 0;

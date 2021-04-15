@@ -21,7 +21,7 @@ void get_data(char *name)
 {
   int i = 0, j;
   char c, ch;
-  __fpurge(stdin);
+  fflush(stdin);
   do 
   {
     c = getchar();
@@ -58,14 +58,14 @@ void get_data(char *name)
 void get_book_details(book_t *book) 
 {
   printf("\nEnter Book Name: ");
-  __fpurge(stdin);
+  fflush(stdin);
   get_data(book->book_name);
 
   printf("\nEnter the Author Name: ");
-  __fpurge(stdin);
+  fflush(stdin);
   get_data(book->author_name);
 
   printf("\nEnter Student Roll number: ");
-  __fpurge(stdin);
+  fflush(stdin);
   get_data(book->student_rollno);
 }

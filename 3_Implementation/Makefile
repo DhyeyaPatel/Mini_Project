@@ -1,6 +1,8 @@
 # Name of the project
 PROJECT_NAME = lib
 
+TEST_PROJ_NAME = Test_$(PROJ_NAME)
+
 # Output directory
 BUILD = build
 
@@ -16,7 +18,6 @@ TEST_SRC = ${SRC}\
 test/library_checkout_test.c\
 unity/unity.c\
 
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
 # All include folders with header files
 INC	= -Iinc\
@@ -25,8 +26,21 @@ INC	= -Iinc\
 #Library Inlcudes
 INCLUDE_LIBS = 
 
-# Project Output name
-PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
+ifdef OS
+   RM = del /q
+   FixPath = $(subst /,\,$1)
+   EXEC = exe
+   editor = notepad
+else
+   ifeq ($(shell uname), Linux)
+      RM = rm -rf
+      FixPath = $1
+	  EXEC = out
+	  editor = cat
+   endif
+endif
+
+
 
 # Document files
 DOCUMENTATION_OUTPUT = documentation/html
@@ -37,25 +51,27 @@ $(PROJECT_NAME):all
 # Run the target even if the matching name exists
 .PHONY: run clean test doc all valgrind
 
-all: $(SRC) $(BUILD)
-	gcc src/library_checkout.c $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
+all: 
+	gcc src/library_checkout.c $(SRC) $(INC) -o $(call FixPath,$(PROJECT_NAME).$(EXEC))
 
 # Call `make run` to run the application
 run:$(PROJECT_NAME)
-	./$(PROJECT_OUTPUT).out
+	./$(PROJECT_NAME).$(EXEC)
 
 # Document the code using Doxygen
 doc:
 	make -C ./documentation
 
 # Build and run the unit tests
-test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
-	./$(TEST_OUTPUT)
+test:$(SRC) $(TEST_SRC)
+	gcc $(TEST_SRC) $(SRC) $(INC) -o $(TEST_PROJECT_NAME).$(EXEC)
+	./$(TEST_PROJECT_NAME).$(EXEC)
 
 # Remove all the built files, invoke by `make clean`
 clean:
-	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT) books.bin
+	$(RM) *.$(EXEC)
+	$(RM) books.bin
+	$(RM) $(BUILD)
 
 #For Linux Only
 valgrind:
