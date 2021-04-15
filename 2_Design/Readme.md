@@ -1,6 +1,9 @@
 # Design(To be Done)
 
+###Component Diagram
 ![Component diagram](https://github.com/DhyeyaPatel/Mini_Project/blob/master/5_Images/Component%20Diagram.png)
+
+###Use Case Diagram
 
 
 ## High Level Design 
