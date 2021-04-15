@@ -1,5 +1,8 @@
 # Design(To be Done)
 
+![Component diagram](https://github.com/DhyeyaPatel/Mini_Project/blob/master/5_Images/Component%20Diagram.png)
+
+
 ## High Level Design 
 ![high level](https://github.com/DhyeyaPatel/Mini_Project/blob/master/5_Images/high%20level.png)
 
