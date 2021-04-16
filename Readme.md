@@ -19,7 +19,7 @@ Folder             | Description
 
 SFID |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|---------|----------------|----------------|---------------|-------------|--------------
-`259820` | Dhyeya Patel | Feature A, B etc    | 4  | 3  |   5  | 5     
+`259820` | Dhyeya Patel | Feature A, B etc    | 4  | 3  |   4  | 4     
    
 
 ## Challenges Faced and How Was It Overcome
