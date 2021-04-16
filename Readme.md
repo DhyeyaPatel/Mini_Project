@@ -13,18 +13,19 @@ Folder             | Description
 `2_Design`         | Documents specifying design details
 `3_Implementation` | All code and documentation
 `4_Test_plan`      | Documents with test plans and procedures
+`5_Images`         | Contains all the images implemented in each readme file
 
 ## Contributors List and Summary
 
 SFID |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|---------|----------------|----------------|---------------|-------------|--------------
-`259820` | Dhyeya Patel | Feature A, B etc    | X No     | X No   |X No   |X No     
+`259820` | Dhyeya Patel | Feature A, B etc    | 2  | 1  |   7  | 0     
    
 
 ## Challenges Faced and How Was It Overcome
 
-1. Implement Code in Windows.
-2. BCD
+1. Implement Code in Windows : One function had the library which was available only in Linux so found the alternate fuction in other library which works in Linux as well.
+2. Test Cases : Still left to be passed
 3. ...
 4. ...
 
