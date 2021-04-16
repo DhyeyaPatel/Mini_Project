@@ -57,7 +57,7 @@ void test_search_book(void)
  */
 void test_display_book(void) 
 { 
-  TEST_ASSERT_EQUAL(1, display_book()>0);
+  TEST_ASSERT_EQUAL(0, display_book()>0);
 }
 
 /**
