@@ -74,7 +74,7 @@ test:$(SRC) $(TEST_SRC)
 coverage:$(SRC) 
 	
 	gcc -fprofile-arcs -ftest-coverage src/library_checkout.c $(INC) $(SRC)  -o $(COVERAGE_TEST_NAME).$(EXEC)
-	./$(COVERAGE_TEST_NAME).$(EXEC) < input_redirect.txt
+#	./$(COVERAGE_TEST_NAME).$(EXEC) < input_redirect.txt
 	gcov -a src/library_checkout.c 
 	$(editor) src/library_checkout.c.gcov
 
