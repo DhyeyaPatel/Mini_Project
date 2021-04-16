@@ -24,7 +24,7 @@ SFID |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|
 
 ## Challenges Faced and How Was It Overcome
 
-1. Implement Code in Windows : One function had the library which was available only in Linux so found the alternate fuction in other library which works in Linux as well.
+1. Implement Code in Windows : One function had the library which was available only in Linux so found the alternate function in other library which works in Linux as well.
 2. Test Cases : Changes were made in code and makefile as well to overcome multiple definition errors.
 3. Dynamic Code Analysis : Still not Passing
 
