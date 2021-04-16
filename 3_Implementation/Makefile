@@ -3,6 +3,8 @@ PROJECT_NAME = lib
 
 TEST_PROJECT_NAME = Test_$(PROJECT_NAME)
 
+COVERAGE_TEST_NAME = coverage_$(PROJECT_NAME)
+
 # Output directory
 BUILD = build
 
@@ -49,7 +51,7 @@ DOCUMENTATION_OUTPUT = documentation/html
 $(PROJECT_NAME):all
 
 # Run the target even if the matching name exists
-.PHONY: run clean test doc all valgrind
+.PHONY: run clean test doc all valgrind coverage
 
 all: 
 	gcc src/library_checkout.c $(SRC) $(INC) -o $(call FixPath,$(PROJECT_NAME).$(EXEC))
@@ -67,15 +69,27 @@ test:$(SRC) $(TEST_SRC)
 	gcc $(TEST_SRC) $(SRC) $(INC) -o $(TEST_PROJECT_NAME).$(EXEC)
 	./$(TEST_PROJECT_NAME).$(EXEC)
 
+
+#Code coverage
+coverage:$(SRC) 
+	
+	gcc -fprofile-arcs -ftest-coverage src/library_checkout.c $(INC) $(SRC)  -o $(COVERAGE_TEST_NAME).$(EXEC)
+	./$(COVERAGE_TEST_NAME).$(EXEC) < input_redirect.txt
+	gcov -a src/library_checkout.c 
+	$(editor) src/library_checkout.c.gcov
+
+#For Linux Only
+valgrind:
+		./$(PROJECT_NAME).$(EXEC) < input_redirect.txt
+
 # Remove all the built files, invoke by `make clean`
 clean:
 	$(RM) *.$(EXEC)
 	$(RM) books.bin
+	$(RM) *.gcno
+	$(RM) *.gcov
+	$(RM) *.gcda
 	$(RM) $(BUILD)
-
-#For Linux Only
-valgrind:
-		./$(PROJECT_NAME).out < input_redirect.txt
 
 # Create new build folder if not present
 $(BUILD):
