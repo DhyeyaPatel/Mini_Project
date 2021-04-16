@@ -19,15 +19,15 @@ Folder             | Description
 
 SFID |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|---------|----------------|----------------|---------------|-------------|--------------
-`259820` | Dhyeya Patel | Feature A, B etc    | 2  | 1  |   7  | 0     
+`259820` | Dhyeya Patel | Feature A, B etc    | 4  | 3  |   5  | 5     
    
 
 ## Challenges Faced and How Was It Overcome
 
 1. Implement Code in Windows : One function had the library which was available only in Linux so found the alternate fuction in other library which works in Linux as well.
-2. Test Cases : Still left to be passed
-3. ...
-4. ...
+2. Test Cases : Changes were made in code and makefile as well to overcome multiple definition errors.
+3. Dynamic Code Analysis : Still not Passing
+
 
 ## Learning Resources
 1. [markdownCheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
