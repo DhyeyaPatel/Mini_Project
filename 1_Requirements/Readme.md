@@ -29,6 +29,7 @@ Library Checkout holds some of the very basic features of a library management s
 *   Delete a record
 *   Search a book
 *   Display record
+*   
 The whole system is operated by an admin.
 
 ## SWOT ANALYSIS
