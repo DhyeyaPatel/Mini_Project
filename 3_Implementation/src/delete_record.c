@@ -9,8 +9,10 @@
  * 
  */
 
-#include "delete_record.h"
-#include "utility.h"
+#include "../inc/program.h"
+#include<stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
 /**
  * @brief Deleting record of the previous issue by the student

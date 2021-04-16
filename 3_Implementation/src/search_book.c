@@ -9,8 +9,9 @@
  * 
  */
 
-#include "search_book.h"
-#include "utility.h"
+#include "../inc/program.h"
+#include<stdio.h>
+#include<string.h>
 
 /**
  * @brief Searching the name and author of the books

@@ -12,10 +12,10 @@ src/delete_record.c\
 src/display_book.c\
 src/search_book.c\
 src/utility.c\
+src/create_new_record.c
 
 # All test source files
-TEST_SRC = ${SRC}\
-test/library_checkout_test.c\
+TEST_SRC = test/library_checkout_test.c\
 unity/unity.c\
 
 

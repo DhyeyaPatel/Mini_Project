@@ -8,8 +8,10 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#include "utility.h"
-#include "book.h"
+#include "../inc/program.h"
+#include<stdio.h>
+#include<string.h>
+
 
 /**
  * @brief Taking Input Parameters

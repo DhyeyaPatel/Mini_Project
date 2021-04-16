@@ -9,8 +9,7 @@
  * 
  */
 
-#include "display_book.h"
-#include "utility.h"
+#include "../inc/program.h"
 #include <stdio.h>
 #include <stdlib.h>
 
